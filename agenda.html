@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Contactos</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    </head>
+<body>
+    <h1>Lista de Contactos</h1>
+    <form id="contactForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+        <label for="profesion">Profesión:</label>
+        <input type="text" id="profesion" required><br>
+        <button type="submit">Guardar</button>
+    </form>
+    <hr>
+    <h2>Buscar Contacto</h2>
+    <input type="text" id="searchInput" placeholder="Ingrese el nombre del contacto">
+    <button onclick="buscarContacto()">Buscar</button>
+    <div id="searchResults"></div>
+
+    <div id="contactList"></div>
+    </body>
+</html>
